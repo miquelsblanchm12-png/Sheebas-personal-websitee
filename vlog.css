@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #05070b;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+}
+
+.logo {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 4rem;
+
+    font-weight: 600;
+
+    letter-spacing: -0.03em;
+}
+
+.back-link {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    opacity: 0.6;
+
+    transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+
+
+
+.vlog-hero {
+    min-height: 75vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 3rem;
+}
+
+.section-label {
+    margin: 0 0 1rem;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.5;
+}
+
+.vlog-hero h1 {
+    margin: 0 0 1.5rem;
+
+    font-size: clamp(6rem, 15vw, 12rem);
+
+    font-weight: 500;
+
+    line-height: 0.8;
+
+    letter-spacing: -0.04em;
+}
+
+.vlog-hero > p:last-child {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-size: 1.3rem;
+
+    line-height: 1.5;
+
+    opacity: 0.6;
+}
+
+
+
+
+.posts {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 5rem 3rem 10rem;
+}
+
+.post {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 3rem;
+
+    padding: 4rem 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.post:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+.post-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.8rem;
+}
+
+.post-number {
+    font-size: 0.8rem;
+
+    letter-spacing: 0.12em;
+
+    opacity: 0.4;
+}
+
+.post-date {
+    font-size: 0.8rem;
+
+    letter-spacing: 0.1em;
+
+    opacity: 0.4;
+}
+
+
+
+
+.post-content h2 {
+    margin: 0 0 1.5rem;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 500;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.02em;
+}
+
+.post-content p {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-size: 1.2rem;
+
+    line-height: 1.6;
+
+    opacity: 0.6;
+}
+
+
+
+
+footer {
+    padding: 4rem 3rem 2rem;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    opacity: 0.5;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 1.5rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+    }
+
+
+
+    .vlog-hero {
+        min-height: 70vh;
+
+        padding: 2rem 1.5rem;
+    }
+
+    .vlog-hero h1 {
+        font-size: clamp(5rem, 20vw, 8rem);
+    }
+
+
+
+
+    .posts {
+        padding: 4rem 1.5rem 8rem;
+    }
+
+    .post {
+        grid-template-columns: 1fr;
+
+        gap: 1.5rem;
+
+        padding: 3rem 0;
+    }
+
+    .post-info {
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+
+    .post-content h2 {
+        font-size: 3rem;
+    }
+
+    .post-content p {
+        font-size: 1.1rem;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 4rem 1.5rem 2rem;
+    }
+
+}

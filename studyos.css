@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #05070b;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+
+    font-size: 4rem;
+    font-weight: 600;
+
+    letter-spacing: -0.03em;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    opacity: 0.6;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+
+
+
+section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 10rem 3rem;
+}
+
+.section-label {
+    margin: 0 0 1rem;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.5;
+}
+
+
+
+
+#hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h1 {
+    margin: 0 0 1.5rem;
+
+    font-size: clamp(6rem, 15vw, 12rem);
+
+    font-weight: 500;
+
+    line-height: 0.8;
+
+    letter-spacing: -0.03em;
+}
+
+.hero-description {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+
+    line-height: 1.4;
+
+    opacity: 0.7;
+}
+
+
+
+
+#about h2,
+#coming-soon h2,
+#technology h2 {
+    margin: 0 0 3rem;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    line-height: 0.9;
+
+    font-weight: 500;
+}
+
+#about > p:last-child,
+#coming-soon > p:last-child {
+    max-width: 700px;
+
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    line-height: 1.5;
+
+    opacity: 0.6;
+}
+
+
+
+
+.tech-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+}
+
+.tech-list span {
+    padding: 0.6rem 1rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+
+    opacity: 0.7;
+}
+
+
+
+
+footer {
+    padding: 4rem 3rem 2rem;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    opacity: 0.5;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 1.5rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 8rem 1.5rem;
+    }
+
+    #hero {
+        min-height: 75vh;
+    }
+
+    #hero h1 {
+        font-size: clamp(5rem, 20vw, 8rem);
+    }
+
+    #about h2,
+    #coming-soon h2,
+    #technology h2 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+    footer {
+        padding: 4rem 1.5rem 2rem;
+    }
+}
+
