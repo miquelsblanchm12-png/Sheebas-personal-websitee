@@ -102,8 +102,13 @@ I asked AI to help me:
 - Learn JavaScript
 - Explain code I didn't understand
 - Debug problems
+- Find mistakes in my code
+- Understand responsive design
+- Improve the structure of my website
 - Experiment with different design ideas
 - Understand JavaScript Canvas
+- Learn about basic 3D mathematics
+- Generate ideas for the project
 - Create visual concepts and backgrounds
 
 Whenever I received code that I didn't understand, I could ask for an explanation and then modify it myself.

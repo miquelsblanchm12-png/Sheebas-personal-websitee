@@ -2,253 +2,125 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Shebas</title>
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+<header>
 
-    <header>
+    <a href="index.html">SHEBAS</a>
 
-        <nav>
+    <nav>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="vlog.html">vlog</a>
+    </nav>
 
-            <span class="logo">
-                SHEBAS
-            </span>
-
-            <div class="nav-links">
-
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="vlog.html">Blog</a>
-
-            </div>
-
-        </nav>
-
-    </header>
+</header>
 
 
+<main>
 
-    <main>
+    <section id="home">
 
+        <h1>Just a boy in a little town</h1>
 
- 
-
-        <section id="home">
-
-            <h1>
-                Just a boy in a little town
-            </h1>
-
-            <p>
-                I'm Shebas, a fanatic of tech and programming.
-                I'm new here, and this is my really first project.
-            </p>
-
-            <a href="#projects">
-                My projects
-            </a>
+        <p>
+            I'm Shebas, a fanatic of tech and programming.
+            I'm new here, and this is my really first project.
+        </p>
 
 
-            <div class="ascii-cube">
+    </div>
 
-                <canvas id="asciiCanvas"></canvas>
+    <div class="about-images">
 
-            </div>
+        <img src="images/nirvana.png" alt="Nirvana">
+        <img src="images/linkinpark.png" alt="Linkin Park">
+        <img src="images/evangelion.jpg" alt="Evangelion">
 
-        </section>
+    </div>
 
-
-
-     
-        <section id="about">
-
-            <p class="section-label">
-                ABOUT ME
-            </p>
-
-            <h2>
-                About me
-            </h2>
-
-            <p>
-                I'm Shebas, a young developer interested in technology,
-                programming and building things.
-            </p>
-
-        </section>
-
+    </section>
 
 
     
-        <section id="projects">
-
-            <p class="section-label">
-                MY WORK
-            </p>
-
-            <h2>
-                My projects
-            </h2>
 
 
-            <div class="projects-grid">
+    <section id="about">
 
-
-        
-
-                <article>
-
-                    <span class="project-number">
-                        01
-                    </span>
-
-                    <h3>
-                        StudyOS
-                    </h3>
-
-                    <p>
-                        A study platform built to help students
-                        organize, learn and compete with friends.
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Python</span>
-
-                    </div>
-
-
-                    <a href="studyos.html">
-                        View project →
-                    </a>
-
-                </article>
-
-
-
-          
-
-                <article>
-
-                    <span class="project-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Personal Portfolio
-                    </h3>
-
-                    <p>
-                        My personal portfolio website, built from
-                        scratch to introduce myself and showcase my work.
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-
-                    <a href="#">
-                        View project →
-                    </a>
-
-                </article>
-
-
-
-                <article>
-
-                    <span class="project-number">
-                        03
-                    </span>
-
-                    <h3>
-                        ???
-                    </h3>
-
-                    <p>
-                        A new project coming soon.
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Coming soon</span>
-
-                    </div>
-
-
-                    <a href="#">
-                        View project →
-                    </a>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <section id="vlog">
-
-            <h2>
-                Blog
-            </h2>
-
-            <a href="vlog.html" class="vlog-link">
-                View blog →
-            </a>
-
-        </section>
-
-
-    </main>
-
-
-
-
-
-    <footer>
+        <h2>About me</h2>
 
         <p>
-            © 2026 Shebas
+            I'm a young developer interested in technology,
+            programming and building things. I like  Nirvana, Linkin Park, And Gorillaz, 
+            My favorite song is Golden Brown, my fav videogame is Minecraft
+            I like Evangelion and Aot.
+
         </p>
 
-    </footer>
+    </section>
 
 
-    <script src="script.js"></script>
+    
+
+
+    <section id="projects">
+
+        <h2>My projects</h2>
+
+        <h3>StudyOS</h3>
+
+        <p>
+            An app to learn and compete with your friends.
+        </p>
+
+        <a href="studyos.html">see project</a>
+
+
+        <h3>Personal Portfolio</h3>
+
+        <p>
+            This website.
+        </p>
+
+
+        <h3>???</h3>
+
+        <p>
+            Coming soon.
+        </p>
+
+    </section>
+
+
+    
+
+
+    <section>
+
+        <h2>Vlog</h2>
+
+        <p>
+            Some things I want to write about.
+        </p>
+
+        <a href="vlog.html">see vlog</a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>made by Shebas</p>
+
+</footer>
 
 </body>
-
 </html>
